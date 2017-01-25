@@ -39,4 +39,4 @@ FROM employees
 WHERE last_name LIKE '%q%'
 AND last_name NOT LIKE '%qu%'
 GROUP BY full_name
-ORDER BY 'number of people with this name' DESC;
+ORDER BY `number of people with this name` DESC;
