@@ -4,7 +4,7 @@ FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya');
 
 #Employees whose last name starts with 'E' — 7,330 rows.
-SELECT DISTINCT last_name
+SELECT last_name
 FROM employees
 WHERE last_name LIKE 'E%';
 
