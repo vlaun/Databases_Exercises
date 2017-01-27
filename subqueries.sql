@@ -33,10 +33,8 @@ WHERE gender IN (
 #Find all the department names that have female managers.
 SELECT *
 FROM departments
-  JOIN dept_manager on dept_manager.dept_no = departments.dept_no
-  JOIN employees as managers on dept_manager.emp_no = managers.emp_no
-WHERE gender IN (
-  SELECT gender
+WHERE dept_name IN (
+  SELECT dept_name
   FROM employees
   WHERE gender = 'F'
 );
